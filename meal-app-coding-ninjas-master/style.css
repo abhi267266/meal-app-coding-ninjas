@@ -116,7 +116,7 @@ div.input-form-to-center{
     opacity: 0;
     pointer-events: none;
     overflow-y: scroll;
-    scroll-behavior: smooth;
+    padding-bottom: 300px;
     transition: width 0.5s ease-in-out;
   }
   
@@ -130,12 +130,13 @@ div.input-form-to-center{
   .close-slider{
     color: white;
     font-size: 20px;
-    position: absolute;
+    position: fixed;
     right: 0;
     top:0;
     margin: 10px;
     z-index: 4;
     cursor: pointer;
+
   }
 
   .card-heart {
