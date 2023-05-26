@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-light bg-dark" >
+        <div class="container-fluid d-flex justify-content-center">
+          <span class="navbar-brand mb-0 h1"><a class="heading-link" href="/">Meals</a></span>
+        </div>
+        <button id="toggle-menu" class="navbar-toggler postion-menu" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon "></span>
+        </button>
+      </nav>
+
+      <!-- this is side menu -->
+      <section id="slider-section">
+        <p style="color: white; font-size: 20px; margin: 10px; display: inline-block ;">WishList</p>
+        <spna class="close-slider">X</spna>
+        <div id="to-populate-wishList">
+
+          <!-- here WishList item will be present -->
+        </div>
+      </section>
+
+      <div id="show-more-box">
+
+        <!-- description box here -->
+
+      </div>
+
+      <h1>
+        Search For Any Recipes!!
+      </h1>
+   
+      <div class="input-form-to-center d-flex justify-content-center">
+        <div class="input-group mb-3">
+          <input id="input-item" type="text" class="form-control" placeholder="Are you hungry" aria-label="Are you hungry" aria-describedby="button-addon2">
+        </div>
+      </div> 
+
+      <div id="cardContainer" class="card-container"></div>
+
+      
+      
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

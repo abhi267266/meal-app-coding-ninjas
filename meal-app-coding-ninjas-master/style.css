@@ -1,0 +1,151 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+    background-color: lightgray;
+}
+
+a.heading-link{
+    all:unset;
+    cursor: pointer;
+    font-size: 40px;
+    color: white;
+} 
+
+div.input-form-to-center{
+    outline: none;
+    width: 50%;
+    position: relative;
+    left: 25%;
+    top: 200px;
+     
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    position: relative;
+    top: 400px;
+  }
+  
+  .card-row {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 18%;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 1;
+    transition: width 0.3s ease-in-out ;
+  }
+  
+  .card-title {
+    font-weight: bold;
+    margin-top :10px;
+  }
+  
+  .card-text {
+    color: #777;
+  }
+  
+  .card:hover{
+    width: 20%;
+  }
+
+  #show-more-box{
+    position:absolute;
+    width: 70%;
+    height: auto;
+    background-color: white;
+    top: 12%;
+    left: 17%;
+    z-index: 2; 
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+    border-radius: 10px;
+    /* display: none; */
+  }
+
+  .box-image {
+    width: 40%;
+    height: auto;
+    float: left;
+    margin-right: 10px;
+    object-fit: cover ;
+  }
+
+  .box-content {
+    overflow:hidden;
+  }
+
+  #close-box{
+    z-index: 2;
+    position: absolute;
+    font-size: 20px;
+    margin-left: 8px;
+    cursor: pointer;
+  }
+
+  h1{
+    position: absolute;
+    top: 20%;
+    left: 38%;
+    z-index: 0;
+  }
+
+  button.postion-menu{
+    position: absolute;
+    right: 10px;
+    background-color: white;
+  }
+
+  #slider-section {
+    height: 120vh;
+    width: 30%;
+    background-color: #343a40;
+    position: fixed;
+    right: 0;
+    z-index: 4;
+    opacity: 0;
+    pointer-events: none;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    transition: width 0.5s ease-in-out;
+  }
+  
+  #slider-section.active {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+
+
+  .close-slider{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    right: 0;
+    top:0;
+    margin: 10px;
+    z-index: 4;
+    cursor: pointer;
+  }
+
+  .card-heart {
+    color: #aaa;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .card-heart.active {
+    color: red;
+  }
+  
